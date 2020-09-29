@@ -1,0 +1,260 @@
+<section id="administration">
+
+    <section>
+        <h2>Administration</h2>
+    </section>
+
+    <section>
+        <h3>Sommaire</h3>
+        <ol>
+            <li><a href="#/admin-interface">Présentation de l'interface</a></li>
+            <li><a href="#/first-steps">Premières configurations</a></li>
+            <li><a href="#/static-contents">Contenus statiques</a></li>
+            <li><a href="#/modules">Modules</a></li>
+            <li><a href="#/products">Produits</a></li>
+            <li><a href="#/currency-and-languages">Devises en langues</a></li>
+        </ol>
+        <p>Dans la suite des slides, nous allons créer une boutique fictive en nous basant sur une boutique en ligne existante telle que <a href="https://www.redbubble.com/" target="_blank">RedBubble</a>.</p>
+    </section>
+
+    <section id="admin-interface">
+        <h3>L'interface d'administration - Tableau de bord</h3>
+        <p>Lorsque vous vous connectez pour la première fois à votre administration PrestaShop, vous arrivez sur le <strong>tableau de bord</strong>.</p>
+        <p>Cette page présente des <strong>statistiques</strong> du site ainsi que des <strong>conseils</strong> concernant les réglages.</p>
+        <img src="assets/images/screenshot-dashboard.png" alt="Dashboard">
+    </section>
+
+    <section>
+        <h3>L'interface d'administration - Les menus</h3>
+        <img src="assets/images/screenshot-header.png" alt="Header">
+        <p>Un menu supérieur vous affiche le <strong>logo</strong> de PrestaShop ainsi que le <strong>numéro de version</strong>.</p>
+        <p>Un menu déroulant vous permet d'afficher des <strong>liens vers des accès rapides</strong> (liste des commandes, création d'un produit...).</p>
+        <p>Une <strong>barre de recherche</strong> vous permet également de rechercher rapidement un contenu spécifique de votre site.</p>
+    </section>
+
+    <section>
+        <h3>L'interface d'administration - Les menus</h3>
+        <img src="assets/images/screenshot-header.png" alt="Header">
+        <p>En haut à droite de l'écran, vous trouverez un lien vous permettant d'<strong>afficher votre boutique</strong>.</p>
+        <p>Des icônes vous permettent également de consulter vos <strong>notifications</strong> et un autre vous affichera vos <strong>badges</strong>.</p>
+    </section>
+
+    <section>
+        <h3>L'interface d'administration - Les menus</h3>
+        <div class="container">
+            <div class="col">
+                <img src="assets/images/screenshot-menu.png" alt="Menu">
+            </div>
+            <div class="col" style="flex-grow: 4;">
+                <ul>
+                    <li><strong>Vendre</strong> : Permet de gérer le quotidien de votre site e-commerce (gestion des produits, des commandes, des clients...).</li>
+                    <li><strong>Personnaliser</strong> : Permet de modifier de gérer des fonctionnalités globales à l'ensemble de votre site e-commerce (apparences, modules, langues...).</li>
+                    <li><strong>Configuration</strong> : Permet de gérer des paramètres globaux du site à son démarrage (Paramètres de la boutique) et des paramètres techniques plus poussés pour par exemple optimiser le référencement (Paramètres avancés).</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h3>L'interface d'administration - Les menus</h3>
+        <img src="assets/images/screenshot-help.png" alt="Help">
+        <p>Sur la plupart des pages, un bouton <strong>Aide</strong> vous permet d'afficher une fenêtre contenant des informations sur la page en cours.</p>
+        <p>Un autre bouton peut vous permettre d'afficher les <strong>modules complémentaires</strong> pouvant être installés et en lien avec le contenu affiché.</p>
+    </section>
+
+    <section id="first-steps">
+        <h3>Premières configurations - Désactiver notre site</h3>
+        <p>Nous allons commencer par afficher notre site e-commerce en <strong>maintenance</strong> afin d'éviter que des internautes n'affichent le site avant qu'il soit terminé.</p>
+        <ul class="breadcrumb">
+            <li>Configurer</li>
+            <li><i class="material-icons mi-settings"></i> Paramètres de la boutique</li>
+            <li>Maintenance</li>
+        </ul>
+        <p><strong>Activer la boutique</strong> vous permet de passer votre site e-commerce en mode maintenance.</p>
+        <p>Si vous souhaitez tout de même pouvoir accéder au site, vous pouvez ajouter votre IP dans la liste des <strong>IP de maintenance</strong>.</p>
+        <p>Il existe également un "Mode catalogue" permettant d'afficher votre site mais sans produits et sans la possibilité de passer de commande.</p>
+        <ul class="breadcrumb">
+            <li>Configurer</li>
+            <li><i class="material-icons mi-settings"></i> Paramètres de la boutique</li>
+            <li>Produits</li>
+        </ul>
+    </section>
+
+    <section>
+        <h3>Premières configurations - Supprimer les contenus de test</h3>
+        <p>Après installation, votre boutique contient des <strong>données d'exemple</strong> (produits, clients, commandes...) afin d'éviter de partir d'une page blanche.</p>
+        <p>Nous allons cependant choisir de partir de zéro et de supprimer les données existantes.</p>
+        <p>Pour cela, nous allons utiliser un module "PrestaShop Cleaner" :</p>
+        <ul class="breadcrumb">
+            <li>Personnaliser</li>
+            <li><i class="material-icons mi-extension"></i> Modules</li>
+            <li>Catalogue de modules</li>
+        </ul>
+        <p>Cliquez ensuite sur les boutons pour "Supprimer le catalogue", "Supprimer les commandes et clients", "Vérifier et réparer" et "Nettoyer et optimiser".</p>
+    </section>
+
+    <section>
+        <h3>Premières configurations - Réglages de base</h3>
+        <ul>
+            <li>
+                <strong>Nom de la boutique</strong>
+                <ul class="breadcrumb">
+                    <li>Configurer</li>
+                    <li><i class="material-icons mi-extension"></i> Paramètres de la boutique</li>
+                    <li>Contact</li>
+                    <li>Magasins</li>
+                </ul>
+                <p>Vous pouvez en profiter pour modifier les <strong>informations de contact</strong></p>
+            </li>
+            <li>
+                <strong>Logo</strong>
+                <ul class="breadcrumb">
+                    <li>Personnaliser</li>
+                    <li><i class="material-icons mi-desktop-mac"></i> Apparence</li>
+                    <li>Thème et logo</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+
+    <section id="static-contents">
+        <h3>Contenus statiques - Page d'accueil</h3>
+        <img src="assets/images/screenshot-carrousel.png" alt="Carrousel">
+        <p>La gestion du <strong>Carrousel</strong> se fait via un module :</p>
+        <ul class="breadcrumb">
+            <li>Personnaliser</li>
+            <li><i class="material-icons mi-extension"></i> Modules</li>
+            <li>Module Manager</li>
+            <li>Modules</li>
+        </ul>
+        <p>Le module se trouve dans la section "Design & Navigation"</p>
+        <footer>
+            <a href="#" class="warning">Il faut cliquer sur "Plus de détails" pour voir le module</a>
+        </footer>
+    </section>
+
+    <section>
+        <h3>Contenus statiques - Page d'accueil</h3>
+        <img src="assets/images/screenshot-banner.png" alt="Banner">
+        <p>La gestion de la <strong>Bannière</strong> se fait également via un module :</p>
+        <ul class="breadcrumb">
+            <li>Personnaliser</li>
+            <li><i class="material-icons mi-extension"></i> Modules</li>
+            <li>Module Manager</li>
+            <li>Modules</li>
+        </ul>
+        <p>Le module se trouve dans la section "Design & Navigation"</p>
+        <p>Vous pouvez également gérer la mise en page de votre page d'acceuil ici :</p>
+        <ul class="breadcrumb">
+            <li>Personnaliser</li>
+            <li><i class="material-icons mi-desktop-mac"></i> Apparence</li>
+            <li>Thème et logo</li>
+            <li>Pages Configuration</li>
+        </ul>
+    </section>
+
+    <section>
+        <h3>Contenus statiques - Page d'accueil</h3>
+        <img src="assets/images/screenshot-text-block.png" alt="Text Block">
+        <p>La gestion du <strong>bloc de texte personnalisé</strong> se fait également via un module :</p>
+        <ul class="breadcrumb">
+            <li>Personnaliser</li>
+            <li><i class="material-icons mi-extension"></i> Modules</li>
+            <li>Module Manager</li>
+            <li>Modules</li>
+        </ul>
+        <p>Le module se trouve dans la section "Design & Navigation"</p>
+        <footer>
+            <a href="/#modules" class="info" style="font-size: 0.8em;">Nous verrons plus tard comment gérer l'emplacement des modules</a>
+        </footer>
+    </section>
+
+    <section>
+        <h3>Contenus statiques - Ajouter une page</h3>
+        <p>A la manière d'un <abbr title="Content Management System">CMS</abbr>, PrestaShop vous permet de gérer des pages.</p>
+        <ul class="breadcrumb">
+            <li>Personnaliser</li>
+            <li><i class="material-icons mi-desktop-mac"></i> Apparences</li>
+            <li>Pages</li>
+        </ul>
+        <p>Plusieurs pages sont créées par défaut mais vous pouvez en créer des nouvelles.</p>
+        <div class="instructions">
+            <ol>
+                <li>Créer une nouvelle page pour présenter les <abbr title="Conditions Générales de Vente">CGV</abbr>.</li>
+            </ol>
+        </div>
+    </section>
+
+    <section>
+        <h3>Contenus statiques - Gestion des menus</h3>
+        <p>L'ensemble des menus du site sont gérés via des modules :</p>
+        <ul>
+            <li><strong>Menu principal </strong> : Permet de gérer le menu principal du site</li>
+            <li><strong>Liste de liens </strong> : Permet de gérer les menus secondaires</li>
+        </ul>
+        <p>Ces modules se trouvent dans la catégorie "Design & Navigation".</p>
+        <div class="instructions">
+            <ol>
+                <li>Ajouter un lien vers l'accueil dans le menu principal</li>
+                <li>Ajouter un lien vers les <abbr title="Conditions Générales de Vente">CGV</abbr> dans le footer.</li>
+            </ol>
+        </div>
+    </section>
+
+    <section id="modules">
+        <h3>Modules - Installer un module</h3>
+        <p>Vous pouvez ajouter un nouveau module en recherchant sur le marketplace :</p>
+        <ul class="breadcrumb">
+            <li>Personnaliser</li>
+            <li><i class="material-icons mi-extension"></i> Modules</li>
+            <li>Catalogue de modules</li>
+        </ul>
+        <div class="instructions">
+            <ol>
+                <li>Installer le module "Liste des marques".</li>
+            </ol>
+        </div>
+    </section>
+
+    <section>
+        <h3>Modules - Gérer les emplacements</h3>
+        <p>Les modules sont affichés dans des zones définies par le thème installé.</p>
+        <p>La liste des zones et des modules qu'elles contiennent sont affichées sur la page "Positions" :</p>
+        <ul class="breadcrumb">
+            <li>Personnaliser</li>
+            <li><i class="material-icons mi-desktop-mac"></i> Apparence</li>
+            <li>Positions</li>
+        </ul>
+        <p>Il est possible de <strong>greffer</strong> un module sur une position et de gérer l'ordonnancement des modules dans une position.</p>
+        <p>Il est également possible de greffer un même module sur plusieurs positions.</p>
+        <div class="instructions">
+            <ol>
+                <li>Afficher le module "Liste des marques" au dessus du footer et uniquement sur la page d'accueil.</li>
+            </ol>
+        </div>
+    </section>
+
+    <section id="products">
+        <h3>Produits - Ajouter des produits</h3>
+        <p>Nous allons maintenant ajouter des produits sur notre site internet.</p>
+        <div class="instructions">
+            <ol>
+                <li>Créer des marques et fournisseurs</li>
+                <li>Créer des attributs (paramétrables côté front) et caractéristiques (fixes)</li>
+                <li>Créer des catégories</li>
+                <li>Créer des produits</li>
+            </ol>
+        </div>
+    </section>
+
+    <section id="currency-and-languages">
+        <h3>Devises et langues - Devise par défaut</h3>
+        <p>Vous pouvez modifier la devise par défaut de votre site e-commerce depuis le menu :</p>
+        <ul class="breadcrumb">
+            <li>Personnaliser</li>
+            <li><i class="material-icons mi-language"></i> International</li>
+            <li>Localisation</li>
+        </ul>
+    </section>
+
+</section>

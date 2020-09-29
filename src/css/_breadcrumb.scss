@@ -1,0 +1,18 @@
+.reveal {
+
+  ul.breadcrumb {
+    display: flex;
+    margin: 0;
+    padding: 0.5em;
+    background-color: white;
+    list-style-type: none;
+
+    & > li {
+      &:not(:last-child)::after {
+        content: '>';
+        margin: 0 0.5em;
+      }
+    }
+  }
+
+}

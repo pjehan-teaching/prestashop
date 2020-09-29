@@ -1,0 +1,19 @@
+$material-icons-font-path: '~material-icons/iconfont/';
+@import '~material-icons/iconfont/material-icons';
+@import 'breadcrumb';
+
+.reveal {
+
+    pre[class*="language-"] {
+        width: 100%;
+        box-sizing: border-box;
+        font-size: 0.6em;
+        &:not(.line-numbers) {
+            padding: 0.5em;
+        }
+        code {
+            padding: 0;
+        }
+    }
+
+}
