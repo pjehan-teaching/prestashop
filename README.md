@@ -1,4 +1,4 @@
-# WordPress
+# PrestaShop
 
 ## Installation
 
