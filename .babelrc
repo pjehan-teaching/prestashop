@@ -1,7 +1,7 @@
 {
   "plugins": [
     ["prismjs", {
-      "languages": ["php", "js", "html", "css", "shell", "yaml", "smarty"],
+      "languages": ["php", "js", "html", "css", "shell", "yaml", "smarty", "sql"],
       "plugins": ["line-numbers", "line-highlight"],
       "theme": "tomorrow",
       "css": true

@@ -1,0 +1,48 @@
+<section id="sql-queries">
+
+    <section>
+        <h2>Requêtes SQL</h2>
+    </section>
+
+    <section>
+        <h3>Gestionnaire SQL</h3>
+        <p>Le <strong>Gestionnaire SQL</strong> de PrestaShop permet d'écrire et d'enregistrer des requêtes <abbr title="Structured Query Language">SQL</abbr> de type SELECT.</p>
+        <p>Cette page menu est accessible depuis</p>
+        <ul class="breadcrumb">
+            <li>Configurer</li>
+            <li><i class="material-icons mi-settings_applications"></i> Paramètres avancés</li>
+            <li>Base de données</li>
+        </ul>
+    </section>
+
+    <section>
+        <h3>Diagramme de la base de données</h3>
+        <img src="assets/images/prestashop-datamodel.png" alt="DataModel" style="max-height: 50vh;">
+        <footer>
+            <a href="src/documents/prestashop-dbmodel.mwb" class="info">Fichier MWB</a>
+        </footer>
+    </section>
+
+    <section>
+        <h3>Écrire une requête SQL</h3>
+        <p>Pour créer une requête SQL, appuyez sur le bouton "Ajouter une requête SQL" puis choisissez le nom que vous souhaitez donner à votre requête.</p>
+        <p>Écrivez ensuite le code SQL de votre requête.</p>
+        <p>Exemple pour récupérer la liste de l'ensemble des produits :</p>
+        <pre><code class="language-sql">SELECT * FROM ps_product;</code></pre>
+        <footer>
+            <a href="#" class="warning">Le prefixe <code>ps_</code> peut varier en fonction de votre installation !</a>
+        </footer>
+    </section>
+
+    <section>
+        <h3>Écrire une requête SQL</h3>
+        <ol class="instructions">
+            <li>Afficher la liste des produits ayant un prix compris entre 20 et 50 euros.</li>
+            <li>Afficher la liste des employés actifs triés par Nom puis par Prénom.</li>
+            <li>Afficher le nombre de comptes client créés au cours du dernier mois.</li>
+            <li>Afficher le prix moyen des produits.</li>
+            <li>Afficher la liste des points d'accroche avec le nombre de module qu'ils contiennent.</li>
+        </ol>
+    </section>
+
+</section>
