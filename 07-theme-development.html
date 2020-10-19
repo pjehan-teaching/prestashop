@@ -7,6 +7,8 @@
     <section>
         <h3>StarterTheme</h3>
         <p>La documentation officielle recommande l’utilisation du Starter Theme pour développer un nouveau thème PrestaShop à partir d’une <strong>base solide</strong>.</p>
+        <pre><code class="language-shell">cd themes
+git clone https://github.com/PrestaShop/StarterTheme.git YOUR_THEME_NAME</code></pre>
         <footer>
             <a href="https://github.com/PrestaShop/StarterTheme" class="info" target="_blank">StarterTheme</a>
         </footer>
@@ -28,6 +30,27 @@ meta:
   compatibility:
       from: 1.7.3.0
       to: ~</code></pre>
+    </section>
+
+    <section>
+        <h3>Gestion des assets</h3>
+        <p>Le dossier <code>assets</code> contient les assets compilés pour la production et le dossier <code>_dev</code> les fichiers bruts.</p>
+        <p>Nous allons commencer par compiler les assets en utilisant webpack :</p>
+        <pre><code class="language-shell">cd _dev
+npm run watch</code></pre>
+    </section>
+
+    <section>
+        <h3>Créer un hook</h3>
+        <p>Déclarer le nouveau hook dans le fichier <code>config/theme.yml</code> :</p>
+        <pre><code class="language-yaml">global_settings:
+  hooks:
+    custom_hooks:
+      - name: displayFooterBefore
+        title: displayFooterBefore
+        description: Add a widget area above the footer</code></pre>
+        <p>Appeler le hook dans un fichier template :</p>
+        <pre><code class="language-smarty">{hook h='displayFooterBefore'}</code></pre>
     </section>
 
 </section>
